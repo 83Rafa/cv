@@ -15,6 +15,24 @@
 
     <style>
       html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+      .container {
+        width: 100%;
+        justify-content: center;
+        height: 400px;
+        overflow-y: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 10px; /* Adiciona uma margem entre cada projeto */
+        border: 2px solid #000;
+    }
+    .project {
+        width: 100%;
+        min-height: 200px; /* Define uma altura mínima, mas permite que a div cresça com o conteúdo */
+        border: 1px solid #000;
+        box-sizing: border-box;
+        padding: 10px;
+    }
     </style>
     
   </head>
@@ -116,7 +134,7 @@
               <ul>
                 <li>Bacharelado em <strong>Propaganda e Marketing</strong></li>
               </ul>
-              <p>Tópicos de desenvolvimento: Teoria da Comunicação; Fundamentos de Marketing; Ética e Legislação Publicitária; Estatística; Economia e Mercado; Criação Publicitária; Planejamento de Marketing e Comunicação; Pesquisa de Mercado; Análise Mercadológica; Comportamento do Consumidor; Administração de Marketing; Marketing de Relacionamento.</p>
+              <p>Áreas abrangidas: Teoria da Comunicação; Fundamentos de Marketing; Ética e Legislação Publicitária; Estatística; Economia e Mercado; Criação Publicitária; Planejamento de Marketing e Comunicação; Pesquisa de Mercado; Análise Mercadológica; Comportamento do Consumidor; Administração de Marketing; Marketing de Relacionamento.</p>
               <p>Além de matérias de estudo comuns a outras áreas, como: Antropologia, Sociologia, Filosofia, Psicologia e Língua Portuguesa, Gestão e Negócios e Vendas.</p>
               <p>As principais habilidades trabalhadas: Trabalho em equipe; Dinamismo e flexibilidade; Senso crítico e visão analítica; Objetividade; Proatividade e liderança; Senso estético.</p>
               <hr>
@@ -203,7 +221,7 @@
             <div class="w3-container">
               <h5 class="w3-opacity"><b>Digital Innovation One (DIO)</b></h5>
               <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Agosto/2022 - <span class="w3-tag w3-indigo w3-round">Agosto/2023</span></h6>
-              <p>A Digital Innovation One, em parceria com algumas emresas proporciona experiências com <i>Bootcamps</i> e especializações imersivos com foco em empregabilidade. Segue os cursos realizados:</p>
+              <p>A Digital Innovation One, em parceria com algumas empresas proporciona experiências com especializações e <i>Bootcamps</i> imersivos com foco em empregabilidade. Segue os cursos realizados:</p>
               <p>Certificados de Conclusão:</p>
               <ul>            
                 <li><a href="https://www.dio.me/certificate/4BD65A46" target="_blank">Bootcamp Santander 2023 – Ciência de Dados com Python(89h)</a></li>
@@ -225,45 +243,57 @@
             <h2 class="w3-text-grey w3-padding-16">
               <i class="fa fa-git fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Projetos
             </h2>
-            <div class="w3-container">
-              <h6 class="w3-text-indigo">
-                <i class="fa fa-github fa-fw w3-margin-right"></i>
-                <a href="https://83rafa.github.io/people_analytics/" target="_blank">People Analytics (Análise de <i>Turnover</i>)</a>
-              </h6>
-              <p>A empresa está sofrendo com a alta rotatividade de funcionários. O ponto crucial E encontrar e compreender a dinâmica dos fatores que estão influenciando a decisão do funcionário em deixar a empresa para recuperar e manter sua capacidade produtiva e aquilíbrio nas contas.</p>
-              <p>O resultado dessa análise e posteriormente das variáveis com peso médio de influência em turnovers tem potencial para diminuir o indice a valores baixíssimos, resultando assim em um quadro de funcionários saudável, maduro e identificado com a cultura e propósitos da empresa, criando uma relação positiva de ganho para ambos os lados.</p>
-              <hr>
+            <div class="container">
+                <div class="project">
+                    <h6 class="w3-text-indigo">
+                        <i class="fa fa-github fa-fw w3-margin-right"></i>
+                        <a href="https://83rafa.github.io/health_analytics/" target="_blank">Health Analytics (Análise Sobre Despesas Com Saúde)</a>
+                    </h6>
+                    <p>O projeto é uma análise dos custos com plano de saúde de uma empresa com intenção de desvendar os fatores que estavam levando a um aumento dessa despesa.</p>
+                    <p>Seu propósito, além de encontrar as variáveis em questão, era também apresentar uma solução capaz de gerar uma redução de 10% com os gastos dentro do período de 12 meses.</p>
+                    <p>Para isso seguiu-se toda uma metodologia para que todos os passos ficassem claros e bem definidos desde o escopo do projeto até sua resolução. O processo seguiu de uma análise SWOT, passando por uma análise exploratória até as análises de correlação e regressão.</p>
+                    <p>A partir do momento em que as variáveis consideradas foco do problema foram encontradas um plano de ação foi desenvolvido utilizando-se da matriz 5W2S para maior objetividade e clareza quanto às ações necessárias, sua motivação, respectivos responsáveis, prazos e seu custo de implantação.</p>
+                    <p>Um dashboard foi desenvolvido para que o cliente pudesse visualizar a influência de cada variável na sua despesa.</p>
+                </div>
+                <div class="project">
+                    <h6 class="w3-text-indigo">
+                        <i class="fa fa-github fa-fw w3-margin-right"></i>
+                        <a href="https://83rafa.github.io/people_analytics/" target="_blank">People Analytics (Análise de <i>Turnover</i>)</a>
+                    </h6>
+                    <p>A empresa está sofrendo com a alta rotatividade de funcionários. O ponto crucial E encontrar e compreender a dinâmica dos fatores que estão influenciando a decisão do funcionário em deixar a empresa para recuperar e manter sua capacidade produtiva e aquilíbrio nas contas.</p>
+                    <p>O resultado dessa análise e posteriormente das variáveis com peso médio de influência em turnovers tem potencial para diminuir o indice a valores baixíssimos, resultando assim em um quadro de funcionários saudável, maduro e identificado com a cultura e propósitos da empresa, criando uma relação positiva de ganho para ambos os lados.</p>
+                </div>
+                <div class="project">
+                    <h6 class="w3-text-indigo">
+                        <i class="fa fa-github fa-fw w3-margin-right"></i>
+                        <a href="https://github.com/83Rafa/house-rocket/" target="_blank">Modelo Preditivo Para Preço de Imóveis</a>
+                    </h6>
+                    <p>Este projeto contém a pipeline completa. Da ETL dos dados, um modelo de preditivo de <i>Machine Learning</i> sob o preços de imóveis e <i>Deploy</i> de App para que o cliente possa fazer a visualização e manipulação dos dados de forma mais intuitiva através de um navegador, utilizando filtros de acordo com sua necessidade pré-requisitada para encontrar oportunidades de negócios.</p>
+                   
+                </div>
+                <div class="project">
+                    <h6 class="w3-text-indigo">
+                        <i class="fa fa-github fa-fw w3-margin-right"></i>
+                        <a href="https://github.com/83Rafa/deteccao-rede-yolov3" target="_blank"><i>Transfer Learning </i>(Detecção de Focos da Denque)</a>
+                    </h6>
+                    <p>Projeto de transferência de aprendizado voltado para detecção de água parada ou situações onde o evento pode ocorrer e causar um possível foco de <i>Aedes Aegypti</i>.</p>
+                </div>
+                <div class="project">
+                    <h6 class="w3-text-indigo">
+                        <i class="fa fa-github fa-fw w3-margin-right"></i>
+                        <a href="https://github.com/83Rafa/image-recommendation" target="_blank"><i>Immage Recommendation</i> (Recomendação de Produtos Por Similaridade)</a>
+                    </h6>
+                    <p>Um sistema simple de recomendação baseados na aparência do produto. Para um dado produto, obtém-se uma quantidade pré-definida de outros produtos similares. É um sistema parecido com essas que vemos em buscadores ou em mídias sociais. À partir do que fazemos uma perquisa o sistema nos mostra também podutos similares que talvez sejam de nosso interesse.</p>
+                </div>
+                <div class="project">
+                    <h6 class="w3-text-indigo">
+                        <i class="fa fa-github fa-fw w3-margin-right"></i>
+                        <a href="https://github.com/83Rafa/reconhecimento-facial" target="_blank">Aprendizado de Máquina (Reconhecimento Facial)</a>
+                    </h6>
+                    <p>Projeto de <strong>reconhecimento facial</strong> utilizando imagens de câmera em tempo real. Foram treinadas 450 imagens para cada item no <i>Tensorflow Keras</i> do teachable machine.</p> 
+                    <p>O <i>image_collect.py</i> captura a quantidade de imagens pré-determinadas, cria uma pasta em images para cada item, posteriormente essas pastas são subidas para o <i><a href="https://teachablemachine.withgoogle.com/">Teachable Machine</a></i> para o treinamento.</p>
+                </div>
             </div>
-            <div class="w3-container">
-              <h6 class="w3-text-indigo">
-                <i class="fa fa-github fa-fw w3-margin-right"></i>
-                <a href="https://github.com/83Rafa/house-rocket/" target="_blank">83Rafa/house-rocket/</a>
-              </h6>
-              <p>Este projeto contém: tratamento, análise de dados, um modelo de Machine Learning de predição e Deploy de APP para que o cliente possa fazer a visualização e manipulação dos dados de forma mais intuitiva através de um navegador, utilizando filtros de acordo com sua necessidade pré-requisitada para encontrar oportunidades de negócios.</p>
-              <hr>
-            </div>
-            <div class="w3-container">
-              <h6 class="w3-text-indigo">
-                <i class="fa fa-github fa-fw w3-margin-right"></i>
-                <a href="https://github.com/83Rafa/deteccao-rede-yolov3" target="_blank">83Rafa/deteccao-rede-yolov3</a>
-              </h6>
-              <p>Projeto de transferência de aprendizado voltado para detecção de água parada ou situações onde o evento pode ocorrer e causar um possível foco de <i>Aedes Aegypti</i>.</p>
-            </div>
-            <div class="w3-container">
-              <h6 class="w3-text-indigo">
-                <i class="fa fa-github fa-fw w3-margin-right"></i>
-                <a href="https://github.com/83Rafa/image-recommendation" target="_blank">83Rafa/image-recommendation</a>
-              </h6>
-              <p>Um sistema simple de recomendação baseados na aparência do produto. Para um dado produto, obtém-se uma quantidade pré-definida de outros produtos similares. É um sistema parecido com essas que vemos em buscadores ou em mídias sociais. À partir do que fazemos uma perquisa o sistema nos mostra também podutos similares que talvez sejam de nosso interesse.</p>
-            </div>
-            <div class="w3-container">
-              <h6 class="w3-text-indigo">
-                <i class="fa fa-github fa-fw w3-margin-right"></i>
-                <a href="https://github.com/83Rafa/reconhecimento-facial" target="_blank">83Rafa/reconhecimento-facial</a>
-              </h6>
-              <p>Projeto de reconhecimento facial utilizando imagens de câmera em tempo real. Foram treinadas 450 imagens para cada item no tensorflow keras do teachable machine. O image_collect.py captura a quantidade de imagens pré-determinadas, cria uma pasta em images para cada item, posteriormente essas pastas são subidas para o teachable machine para o treinamento.</p>
-            </div>
-          </div>
 
           <div class="w3-container w3-card w3-white w3-margin-bottom">
             <h2 class="w3-text-grey w3-padding-16">
@@ -272,7 +302,6 @@
             <div class="w3-container">
               <h5 class="w3-opacity"><b>Motorista Particular</b></h5>
               <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Junho/2012 - <span class="w3-tag w3-indigo w3-round">Atual</span></h6>
-              <p>Planejar rotas rápidas e seguras, realizar verificações de manutenção e conservação do veículo. Conhecimento das leis de trânsito, identificar situações de perigo com antecedência. </p>
               <hr>
             </div>
             <div class="w3-container">
